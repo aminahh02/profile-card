@@ -76,52 +76,49 @@ body {
 
 
 @media screen and (max-width: 400px) {
-    
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        overflow: hidden;  
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
     }
-    
+
     .container {
-        width: 100vw;
-        height: 100vh;
-        padding: 20px;
+        max-width: 100%;
+        width: 100%;
+        min-height: 100vh;  
+        padding: 20px 40px;
         border-radius: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; 
-        align-items: center;
-    }
+        justify-content: space-around;
+    }  
 
-    .header {
-        display: flex;
+    .container .header {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
-    .header img {
-        max-width: 30vw; 
+    .container .header img {
+        width: 30vw;
+        max-width: 120px;
+        height: auto;
+        border-radius: 20%;
     }
 
-    .fullname {
-        padding: 0;
+    .container .header .fullname {
+        padding: 2px;
         text-align: center;
-        font-size: 1em;
-    }
-
-    .job {
         font-size: 1.2em;
     }
 
-    .short-bio {
+    .container .job {
+        font-size: 1.2em;
+    }
+
+    .container .short-bio {
         font-size: 1em;
         padding: 0;
-        text-align: center;
     }
 
     .location-time {
