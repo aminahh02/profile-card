@@ -91,10 +91,11 @@ body {
         border-radius: 0;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }  
 
     .container .header {
+        border: 2px solid red;
         flex-direction: column;
         align-items: center;
     }
@@ -110,6 +111,10 @@ body {
         padding: 2px;
         text-align: center;
         font-size: 1.2em;
+    }
+
+    .container .section{
+        border: 2px solid yellow;
     }
 
     .container .job {
@@ -131,6 +136,7 @@ body {
     }
 
     .footer {
+        border: 2px solid green;
         margin-top: 0px;
     }
 }
