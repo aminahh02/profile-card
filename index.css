@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,46 +14,44 @@ body{
     color: rgb(212,173,238);
 }
 
-.container{
-    
+.container {
     border-radius: 20px;
     width: 100%;
     max-width: 400px;
     padding: 30px 40px;
     background: rgb(101,63,124);
+}
 
-    .header{
-        display: flex;
-        width: 100%;
-        margin: 0px 0px 15px 0px;
+.header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
 
-        img{
-            border: 5px solid white;
-            max-width: 140px; 
-            border-radius: 20%;
-        }
-        
-        .fullname{
-            color: rgb(21,6,31);
-            padding: 30px;
-            font-weight: bold;
-            font-size: larger;
-        }
-    }
+.header img {
+    border: 5px solid white;
+    max-width: 140px; 
+    border-radius: 20%;
+}
 
-    .job {
-        width: 100%;
-    }
+.header .fullname {
+    color: rgb(21,6,31);
+    padding: 30px;
+    font-weight: bold;
+    font-size: larger;
+}
 
-    .short-bio{
-        /* border: 2px solid red; */
-        padding: 20px 20px 12px 0px;
-        font-size: 14px;
-    }
+.job {
+    width: 100%;
+}
+
+.short-bio {
+    padding: 20px 20px 12px 0px;
+    font-size: 14px;
 }
 
 
-.location-time{
+.location-time {
     display: flex;
     column-gap: 5px;
     justify-content: center;
@@ -61,63 +59,66 @@ body{
     font-size: 10px;
 }
 
-.social-links{
-    /* border: 2px solid yellow; */
-display: flex;
-justify-content: center;
-column-gap: 20px;
-padding: 30px 0px 20px 0px;
-color: rgb(21,6,31);
 
-a {
+.social-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 30px 0px 20px 0px;
+    color: rgb(21,6,31);
+}
+
+
+.social-links a {
     text-decoration: none;
     color: inherit; 
 }
-}
+
 
 @media screen and (max-width: 400px) {
-
-    body{
-        display: block;  /* Remove centering effect */
-        width: 100%;
+    html, body {
         height: 100%;
+        margin: 0;
+        padding: 0;
     }
-    
+
     .container {
         max-width: 100%;
-        width: 100vw; 
-        height: 100vh; 
+        width: 100%;
+        min-height: 100vh;  
         padding: 20px 40px;
         border-radius: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }  
 
-        .header {
-            flex-direction: column;
-            align-items: center;
-    
-            img{
-                max-width: 30vw; 
-            }
-    
-                .fullname {
-            padding: 0px;
-            text-align: center;
-            font-size: 1em;
-                }
-        }
+    .container .header {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .job{
-            font-size: 1.2em;
-        }
+    .container .header img {
+        width: 30vw;
+        max-width: 120px;
+        height: auto;
+        border-radius: 20%;
+    }
 
-        .short-bio{
-            font-size: 1em;
-            padding: 0;
-        }
-    } 
+    .container .header .fullname {
+        padding: 0px;
+        text-align: center;
+        font-size: 1em;
+    }
 
+    .container .job {
+        font-size: 1.2em;
+    }
+
+    .container .short-bio {
+        font-size: 1em;
+        padding: 0;
+    }
 
     .location-time {
         font-size: 0.6em;
@@ -128,9 +129,8 @@ a {
         padding: 20px;
     }
 
-    .footer{
+    .footer {
         margin-top: 0px;
     }
 }
-
 
